@@ -1,0 +1,19 @@
+{
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/v2/Northwind/Northwind.svc/(.*)$",
+      "destination": "northwind",
+      "authenticationType": "xsuaa",
+      "scope": {
+        "GET": [
+          "$XSAPPNAME.DataViewer"
+        ],
+        "default": [
+          "$XSAPPNAME.DataViewer"
+        ]
+      }
+    }
+  ],
+  "welcomeFile": "/ndbstraininghtml5ui5"
+}

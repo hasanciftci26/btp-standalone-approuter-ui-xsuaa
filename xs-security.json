@@ -1,0 +1,20 @@
+{
+  "xsappname": "btp-standalone-approuter-ui-xsuaa",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.DataViewer",
+      "description": "UAA"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "UIDataViewer",
+      "description": "UAA",
+      "scope-references": [
+        "$XSAPPNAME.DataViewer"
+      ]
+    }
+  ]
+}
